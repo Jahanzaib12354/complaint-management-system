@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Complaint Form</title>
+<link rel="stylesheet" href="/formcss/complaint.css">
+</head>
+<body>
+
+<div class="card">
+<h2>Complaint Form</h2>
+
+<form id="complaintForm">
+
+<input type="text" id="name" readonly>
+<input type="email" id="email" readonly>
+
+<select id="category1">
+<option value="">Select Category</option>
+<option value="Electronics">Electronics</option>
+<option value="Clothes">Clothes</option>
+</select>
+<span class="error" id="cat1Error"></span>
+
+<select id="category2" disabled>
+<option value="">Select Sub Category</option>
+</select>
+
+<select id="category3" disabled>
+<option value="">Select Issue</option>
+</select>
+
+<textarea id="description" placeholder="Describe your complaint"></textarea>
+<span class="error" id="descError"></span>
+
+<button type="submit">Submit Complaint</button>
+
+</form>
+
+<div id="apiResult"></div>
+
+</div>
+
+<script src="/formjs/complaint.js"></script>
+</body>
+</html>
