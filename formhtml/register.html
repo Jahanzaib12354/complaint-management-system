@@ -1,33 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Register</title>
-<link rel="stylesheet" href="/formcss/register.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/formcss/register.css">
 </head>
 <body>
-
 <div class="card">
-<h2>Register</h2>
+    <h2>Fetch User Data</h2>
 
-<form id="registerForm">
+    <button id="loadName">Load Name</button>
+    <button id="loadEmail">Load Email</button>
+    <button id="loadCity">Load City</button>
 
-<input type="text" id="username" placeholder="Username">
-<span class="error" id="userError"></span>
-
-<input type="email" id="email" placeholder="Email">
-<span class="error" id="emailError"></span>
-
-<input type="password" id="password" placeholder="Password">
-<span class="error" id="passError"></span>
-
-<button type="submit">Register</button>
-
-</form>
-
-<p>Already have account? <a href="login.html">Login</a></p>
+    <table border="1" id="userTable">
+        <tr>
+            <th>Data</th>
+        </tr>
+    </table>
 </div>
+
 
 <script src="/formjs/register.js"></script>
 </body>
