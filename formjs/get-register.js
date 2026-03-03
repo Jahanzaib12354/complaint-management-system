@@ -1,41 +1,41 @@
-const loadData = async (type) => {
-  try {
-    let response = await fetch("https://jsonplaceholder.typicode.com/users");
-    let data = await response.json();
+// const loadData = async (type) => {
+//   try {
+//     let response = await fetch("https://jsonplaceholder.typicode.com/users");
+//     let data = await response.json();
 
-    let table = document.getElementById("userTable");
+//     let table = document.getElementById("userTable");
 
     
-    table.innerHTML = "<tr><th>" + type.toUpperCase() + "</th></tr>";
+//     table.innerHTML = "<tr><th>" + type.toUpperCase() + "</th></tr>";
 
-    data.forEach(user => {
+//     data.forEach(user => {
 
-      let row = document.createElement("tr");
-      let cell = document.createElement("td");
+//       let row = document.createElement("tr");
+//       let cell = document.createElement("td");
 
-      if(type === "name"){
-        cell.textContent = user.name;
-      }
-      else if(type === "email"){
-        cell.textContent = user.email;
-      }
-      else if(type === "city"){
-        cell.textContent = user.address.city;
-      }
+//       if(type === "name"){
+//         cell.textContent = user.name;
+//       }
+//       else if(type === "email"){
+//         cell.textContent = user.email;
+//       }
+//       else if(type === "city"){
+//         cell.textContent = user.address.city;
+//       }
 
-      row.appendChild(cell);
-      table.appendChild(row);
+//       row.appendChild(cell);
+//       table.appendChild(row);
 
-    });
+//     });
 
-  } catch (error) {
-    console.log("Error:", error);
-  }
-};
+//   } catch (error) {
+//     console.log("Error:", error);
+//   }
+// };
 
-document.getElementById("loadName").addEventListener("click", () => loadData("name"));
-document.getElementById("loadEmail").addEventListener("click", () => loadData("email"));
-document.getElementById("loadCity").addEventListener("click", () => loadData("city"));
+// document.getElementById("loadName").addEventListener("click", () => loadData("name"));
+// document.getElementById("loadEmail").addEventListener("click", () => loadData("email"));
+// document.getElementById("loadCity").addEventListener("click", () => loadData("city"));
 
 
 

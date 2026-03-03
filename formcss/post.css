@@ -1,4 +1,4 @@
-/* body{
+body{
 font-family: Arial;
 background: linear-gradient(135deg,#5063b5,#764ba2);
 display:flex;
@@ -7,13 +7,7 @@ align-items:center;
 height:100vh;
 }
 
-.card{
-background:white;
-padding:30px;
-border-radius:10px;
-width:350px;
-text-align:center;
-}
+
 
 button{
 padding:10px 20px;
@@ -24,7 +18,3 @@ cursor:pointer;
 margin-bottom:15px;
 }
 
-.result{
-text-align:left;
-margin-top:15px;
-} */
